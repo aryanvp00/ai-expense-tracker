@@ -1,7 +1,8 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
 from jose import jwt
-
-
-SECRET_KEY = "change-this-later"
+SECRET_KEY = os.getenv("JWT_SECRET")
 ALGORITHM = "HS256"
 
 

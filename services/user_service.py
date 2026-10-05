@@ -1,5 +1,5 @@
+import os 
 from pymongo import MongoClient
-
 from models.user import User
 from utils.password import hash_password, verify_password
 
@@ -9,7 +9,7 @@ class UserService:
 
     def __init__(self):
         # Connect to MongoDB
-        self.client = MongoClient("mongodb://localhost:27017/")
+        self.client = MongoClient(os.getenv("MONGODB_URI", "mongodb://localhost:27017/"))
 
         # Select database
         self.db = self.client["expense_tracker"]
