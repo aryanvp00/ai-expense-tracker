@@ -514,6 +514,7 @@ def ask_financial_assistant(question, expenses):
         - Do not recalculate the numbers.
         - Do not make unsupported claims.
         - Explain the provided financial patterns clearly.
+        - All amounts are in Indian rupees. Always use the ₹ symbol, never $.
         - Keep the answer concise.
         """
     )
