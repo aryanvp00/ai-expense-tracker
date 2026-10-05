@@ -241,7 +241,7 @@ p {
   font-weight: 700;
 }
 
-..expense-card h3 {
+.expense-card h3 {
   margin: 12px 0 0;
   color: #e2e8f0;
   font-size: 17px;
